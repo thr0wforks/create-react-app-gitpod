@@ -1,22 +1,138 @@
+html, body, #root, .wood {
+  position: relative;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  width: 100%;
+  height: 100%;    
+}
+
 .App {
-  text-align: center;
+  position: absolute;
+  border-radius: 20px;
+  left: 20px;
+  top: 20px;
+  width: 740px;
+  height: 740px;
+  border: 1px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
+.playerBoard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  height: 70%;
+  position: absolute;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.storename {
+  width: 1rem;
+  transform: rotate(90deg);
+}
+
+.storeitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.pots {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 4px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.pot {
+  display: inline-block;
+  background: red;
+  background-blend-mode: soft-light;
+  border-radius: 100%;
+  opacity: 0.2;
+  width: 130%;
+  padding-top: 130%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+}
+
+.mancala {
+  background: red;
+  border-radius: 20%;
+  opacity: 0.2;
+  width: 50%;
+  height: 80%;
+  margin: -100% 5% -100% -4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pb2a {
+  left: 42%;
+  bottom: -25%;
+  transform: rotate(-90deg);
+}
+
+.pb2b {
+  left: 42%;
+  top: -25%;
+  transform: rotate(90deg);
+}
+
+.pb3a {
+  left: 42%;
+  bottom: -25%;
+  transform: rotate(-90deg);
+}
+
+.pb3b {
+  left: 65%;
+   top: 4%;
+  transform: rotate(-26deg);
+}
+
+.pb3c {
+  left: 18%;
+  top: 4%;
+  transform: rotate(206deg);
+}
+
+.pb4a {
+  left: 42%;
+  bottom: -29%;
+  transform: rotate(-90deg);
+}
+
+.pb4b {
+  left: 83.5%;
+  top: 14%;
+  transform: rotate(180deg);
+}
+
+.pb4c {
+  left: 42%;
+  top: -29%;
+  transform: rotate(90deg);
+}
+
+.pb4d {
+  left: 0%;
+  top: 14%;  
 }
